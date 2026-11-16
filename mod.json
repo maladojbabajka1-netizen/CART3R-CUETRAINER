@@ -1,0 +1,11 @@
+{
+    "geode": "$GEODE_VERSION",
+    "gd": {
+        "android": "2.2081"
+    },
+    "id": "carter.cuetrainer",
+    "name": "Cue Trainer",
+    "version": "v1.0.0",
+    "developer": "CART3R",
+    "description": "Displays manually configured CLICK and RELEASE timing cues during a Geometry Dash level."
+}
