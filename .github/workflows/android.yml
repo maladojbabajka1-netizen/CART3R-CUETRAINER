@@ -1,1 +1,20 @@
 
+name: Build Android Geode mod
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Geode SDK
+        run: |
+          python3 -m pip install --upgrade pip
+          pip install geode-sdk
+
+      - name: Build Android mod
+        run: geode build -p android64
