@@ -1,3 +1,4 @@
+
 name: Build Android Geode mod
 
 on:
@@ -15,7 +16,7 @@ jobs:
         uses: geode-sdk/build-geode-mod@main
         with:
           target: Android64
-          sdk: latest
+          sdk: v5.11.2
 
       - name: Upload mod
         uses: actions/upload-artifact@v4
